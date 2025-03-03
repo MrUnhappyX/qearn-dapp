@@ -77,4 +77,3 @@ The application employs responsive design principles and mobile-first developmen
 ## Documentations
 
 - [QEarn: Qubics path to high yields and reduced supply](https://medium.com/@cryptopion33r/qearn-the-path-to-high-yields-and-reduced-qubic-supply-21fecf5d3c32)
-- [Qearn for risk free yield by locking QU](https://medium.com/@qsilver97/qearn-for-risk-free-yield-by-locking-qu-12f3fbe23706)
