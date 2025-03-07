@@ -24,6 +24,8 @@ export const useTransferForm = () => {
   useEffect(() => {
     if (balances.length > 0) {
       setAccounts([{ label: t("qearnForm.Account") + " 1", value: balances[0].id }]);
+    } else {
+      setAccounts([]);
     }
   }, [balances]);
 
@@ -70,10 +72,10 @@ export const useTransferForm = () => {
         initAmount: Number(balances[selectedAccount].balance),
         amount: numAmount,
         epoch: tickInfo?.epoch || 0,
-        targetTick: tickInfo?.tick,
+        targetTick: tickInfo?.tick + settings.tickOffset,
         type: "transfer",
       });
-      toast.success(t("qearnForm.Transaction submitted"));
+      toast.success(t("transferForm.Transaction submitted"));
       setRecipient("");
       setAmount("");
     } catch (error) {
