@@ -1,4 +1,4 @@
-export const RPC_ENDPOINT = "https://rpc.qubic.org/live";
+export const RPC_ENDPOINT = "https://rpc.qubic.org";
 
 export const API_ENDPOINT = "https://dev01.qubic.org";
 
